@@ -1,6 +1,6 @@
 import axios from "axios";
-
-const URL ="http://localhost:8000";
+const URL='https://tareas-crud-xco7.onrender.com/tasks/api/v1/tasks/'
+// const URL ="http://localhost:8000";
 
 console.log(URL);
 const tasksApi = axios.create({
