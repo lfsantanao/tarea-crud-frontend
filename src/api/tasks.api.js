@@ -1,16 +1,10 @@
 import axios from "axios";
-
-const URL = 'https://tareas-crud-xco7.onrender.com';
-// const URL = "http://localhost:8000";
-
-console.log(URL);
+const URL='https://tareas-crud-xco7.onrender.com'
+// const URL ="http://localhost:8000";
 
 const tasksApi = axios.create({
-  baseURL: `${URL}/tasks/api/v1/tasks`,
+  baseURL: `https://tareas-crud-xco7.onrender.com/tasks/api/v1/tasks`,
 });
-
-// Configuración de CORS
-tasksApi.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
 
 export const getAllTasks = () => tasksApi.get("/");
 
